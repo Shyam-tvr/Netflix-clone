@@ -9,7 +9,6 @@ function Banner() {
       setMovie(response.data.results[Math.floor((Math.random() * 20) + 1)])
     })
   },[])
- console.log(movie);
   return (
     <div style={{backgroundImage :`url(${movie ? imageUrl+movie.backdrop_path : ""})`}} className='banner'>
         <div className="content">
